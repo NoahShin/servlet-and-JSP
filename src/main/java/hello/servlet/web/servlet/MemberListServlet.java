@@ -1,7 +1,7 @@
 package hello.servlet.web.servlet;
 
-import hello.servlet.domain.Member;
-import hello.servlet.domain.MemberRepository;
+import hello.servlet.domain.member.Member;
+import hello.servlet.domain.member.MemberRepository;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.List;
