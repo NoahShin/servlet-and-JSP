@@ -22,15 +22,13 @@ List<Member> members = memberRepository.findAll();
     </thead>
 <tbody>
 <%
-for (Member member : members) {
+    for (Member member : members) {
         out.write("    <tr>");
-out.write("
-out.write("
-out.write("
+out.write("<td>" + member.getId() + "</td>");
+out.write("<td>" + member.getUsername() + "</td>");
+out.write("<td>" + member.getAge() + "</td>");
 out.write("    </tr>");
-<td>" + member.getId() + "</td>");
-<td>" + member.getUsername() + "</td>");
-<td>" + member.getAge() + "</td>");
+
 } %>
       </tbody>
   </table>
